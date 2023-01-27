@@ -4,81 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Little Taco Shop</title>
+    <title>Little Taco Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="heading" id="heading">
-        <h1 class="contactTitle" id="contactTitle">
-            Contact Us
+    <header class="header" id="header">
+        <h1 class="header__h1" id="header__h1">
+            Little Taco Shop
         </h1>
-        <nav aria-label="primarynav">
+        <nav aria-label="primarynav" class="header__nav">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/#about">About LTS</a></li>
-                <li><a href="/#our-menu">Our Menu</a></li>
-                <li><a href="hours.html">Store Hours</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="/#main__menu">Menu</a></li>
+                <li><a href="hours.html">Hours</a></li>
             </ul>
         </nav>
-        <figure class="image3" id="image3">
-            <img src="./images/tacos_close_up_400x260.png" alt="tacoscloseup" width="400" height="260">
-            <figcaption>
-                Little Taco Shop Tacos
-            </figcaption>
-        </figure>
-
-
     </header>
-    <hr>
     <main>
-        <section class="form" id="form">
-            <h2 class="formsubtitle" id="formsubtitle">
-                Our Contact Form
-            </h2>
-            <form action="https://httpbin.org/post" method="post">
-                <fieldset>
-                    <legend>Send Us A Message</legend>
-                    <p>
-                    <label for="name">Name:</label>
-                    <input type="text" name="" id="name" placeholder="your name" required>
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="your email" required>
-                </p>
-                <p>
-                    <label for="message">Your Message:</label>
-                    <br>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
-                    
-                </p>                    
-                </fieldset>
-                <p class="button-container" id="button-container">
-                    <button type="submit">Submit</button>
-                    <button class="reset" id="reset" type="reset">Reset</button>
-                </p>
-            </form>
+        <section class="hero" id="hero">
+            <figure class="hero__figure" id="hero__figure">
+                <img src="./images/tacos_close_up_1000x649.png" alt="tacoscloseup" width="1000" height="649">
+                <figcaption class="offscreen">
+                    Little Taco Shop Tacos
+                </figcaption>
+            </figure>
         </section>
-        <section class="location" id="location">
-            <h2 class="locationHeading" id="locationHeading">Our Location</h2>
-            <p class="address" id="address">
+        <section class="main__section" id="main__section">
+        
+        <section class="main__location" id="main__location">
+            <h2 class="location__h2" id="location__h2">Location</h2>
+            <p class="location__address" id="location__address">
                 <address>
                     555 Taco Temptaion LAne, Suite T
                     <br>
                     Kurisas City, MO 5555-5555
                 </address>
             </p>
-            <p class="phone" id="phone" >
+            <p class="loaction__p" id="loaction__p" >
                 <em>Phone:</em> <a href="tel:+5555555555">555-555-5555</a>
             </p>
         </section>
-        <p class="top" id="top">
+        <section class="main__form" id="main__form">
+            <h2 class="form__h2" id="form__h2">
+               Feedback Form
+            </h2>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset class="form__fieldset">
+                    <legend class="offscreen">Send Us A Message</legend>
+                    <p class="form__p">
+                    <label class="form_label" for="name">Name:</label>
+                    <input class="form__input" type="text" name="" id="name" placeholder="Your name" required>
+                </p>
+                <p class="form__p">
+                    <label class="form__label" for="email">Email:</label>
+                    <input class="form__input" type="email" name="email" id="email" placeholder="Your email" required>
+                </p>
+                <p class="form__p">
+                    <label class="form__label" for="message">Your Message:</label>
+                    <br>
+                    <textarea class="form__textarea" name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                    
+                </p>                    
+                </fieldset>
+                <p class="button__container" id="button__container">
+                    <button class="btn" type="submit">Submit</button>
+                    <button class="btn" id="reset" type="reset">Reset</button>
+                </p>
+            </form>
+        </section>
+       
+    </section></main>
+    <footer class="footer" id="footer">
+        <p class="footer__p1" id="footer__p1">
             <a href="#">Back to Top</a>
         </p>
-    </main>
-    <footer>
-        <p class="footer" id="footer">
-            Copyright &copy; The Little Taco Shop
+        <p class="footer__p" id="footer__p">
+            <span class="nowrap" id="nowrap"> Copyright &copy; LTS</span>
         </p>
     </footer>
     
